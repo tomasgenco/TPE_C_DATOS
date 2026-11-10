@@ -2,11 +2,15 @@
 
 ## Requisitos
 
-- Git, Make y Docker instalado y en ejecución, con permisos para usar `docker`.
-- Acceso al repositorio y al archivo `tpe-c-datos.tar` entregado por separado.
-- Una terminal de Linux.
+- Git, Make y Python 3.14 con soporte para entornos virtuales (`venv`). El entorno probado usa Python 3.14.6.
+- Conexión a internet para instalar las dependencias.
+- Acceso al repositorio si es privado.
+
+En Ubuntu o Pop!_OS, si Python indica que falta `venv`, instalá el paquete correspondiente a su versión; por ejemplo, `sudo apt install python3.14-venv` para Python 3.14.
 
 ## Ejecutar el notebook
+
+Estos pasos son para una terminal de Linux:
 
 1. Cloná el repositorio y entrá en la carpeta:
 
@@ -15,12 +19,12 @@
    cd TPE_C_DATOS
    ```
 
-2. Copiá el archivo `tpe-c-datos.tar` recibido a esta carpeta y ejecutá:
+2. Creá el entorno, instalá las dependencias y abrí Jupyter:
 
    ```bash
    make mk-init
    ```
 
-3. Abrí en el navegador la dirección con `token` que aparece en la terminal. Seleccioná `tpe_enfermedad_renal.ipynb` y ejecutá las celdas en orden, o elegí **Run → Run All Cells**.
+3. Si el navegador no se abre automáticamente, abrí la dirección con `token` que aparece en la terminal. Seleccioná `tpe_enfermedad_renal.ipynb` y ejecutá las celdas en orden o elegí **Run → Run All Cells**.
 
-El comando carga la imagen ya preparada y abre Jupyter. Los cambios guardados quedan en la carpeta del proyecto. Para detenerlo, presioná `Ctrl+C` en la terminal.
+Para detener Jupyter, presioná `Ctrl+C` en la terminal. En ejecuciones posteriores, el mismo comando reutiliza los paquetes ya instalados.
