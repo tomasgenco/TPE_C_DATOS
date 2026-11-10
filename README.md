@@ -6,7 +6,13 @@
 - Conexión a internet para instalar las dependencias.
 - Acceso al repositorio si es privado.
 
-En Ubuntu o Pop!_OS, si Python indica que falta `venv`, instalá el paquete correspondiente a su versión; por ejemplo, `sudo apt install python3.14-venv` para Python 3.14.
+En Ubuntu o Pop!_OS, si Python indica que falta `venv`, instalá el paquete correspondiente a la versión de Python del equipo. Por ejemplo, si el mensaje recomienda `python3.12-venv`, ejecutá:
+
+```bash
+sudo apt install python3.12-venv
+```
+
+Podés consultar la versión que usará el Makefile con `python3 --version`. Las dependencias se guardaron desde Python 3.14.6, por lo que con otra versión puede haber incompatibilidades; para reproducir ese entorno usá Python 3.14.
 
 ## Ejecutar el notebook
 
