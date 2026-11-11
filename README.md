@@ -4,7 +4,7 @@
 
 - Git, Make y Python 3.14 con soporte para entornos virtuales (`venv`). El entorno probado usa Python 3.14.6.
 - Conexión a internet para instalar las dependencias.
-- Acceso al repositorio si es privado.
+- Acceso al repositorio, ya que es privado.
 
 En Ubuntu o Pop!_OS, si Python indica que falta `venv`, instalá el paquete correspondiente a la versión de Python del equipo. Por ejemplo, si el mensaje recomienda `python3.12-venv`, ejecutá:
 
